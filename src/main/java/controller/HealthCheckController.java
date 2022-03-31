@@ -18,7 +18,7 @@ public class HealthCheckController {
         return ResponseEntity.ok("Sucesso");
 
     }
-
+    @GetMapping()
     public ResponseEntity<String> version(){
         Properties properties = new Properties();
         InputStream inputStream= getClass().getClassLoader().getResourceAsStream( "application.yml");
