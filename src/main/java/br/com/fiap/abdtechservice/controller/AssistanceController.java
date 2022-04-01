@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/assistence")
-public class AssistenceController {
+@RequestMapping("/assistance")
+public class AssistanceController {
     private final AssistanceService assistanceService;
 
-    public AssistenceController(
+    public AssistanceController(
             @Autowired
                     AssistanceService assistanceService
     ){
