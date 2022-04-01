@@ -21,12 +21,12 @@ public class HealthCheckController {
         this.propertiesComponent= propertiesComponent;
     }
 
-
+    @GetMapping()
     public ResponseEntity<String> status() {
         return ResponseEntity.ok("Sucesso!");
 
     }
-
+    @GetMapping("version")
     public ResponseEntity<String> version(){
         return ResponseEntity.ok(propertiesComponent.getName()+ " - "+ this.propertiesComponent.getVersion());
     }
